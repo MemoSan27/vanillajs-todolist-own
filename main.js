@@ -28,6 +28,7 @@ const addDeleteBtn = () => {
     deleteBtn.className = 'btn-delete';
 
     deleteBtn.addEventListener('click', (e) => {
+        e.preventDefault();
         const item = e.target.parentElement;
         /* console.log(item); */
         ul.removeChild(item);
